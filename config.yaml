@@ -10,3 +10,4 @@ notifier_system: dzen2popup
 IP: 'localhost'
 port: 29349
 debug_port: 29249
+

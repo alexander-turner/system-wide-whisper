@@ -6,10 +6,9 @@ stop_signal_file="$ipc_dir"/stop
 pause_signal_file="$ipc_dir"/pause
 abort_signal_file="$ipc_dir"/abort
 running_signal_file="$ipc_dir"/running
-
 run () {
-    python=$(yq '.python_path' < "$project_dir"/config_local.yaml)
-    "$python" "$project_dir"/main.py "$@"
+    python="/home/turn/miniconda3/envs/whisper/bin/python3.10"
+    "$python" "$project_dir"/src/server/main.py "$@"
 }
 
 case "$1" in
